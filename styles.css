@@ -1,0 +1,42 @@
+body{
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  background-image: url('https://sironatherapeutichorsemanship.files.wordpress.com/2017/09/plain-green-wallpaper.jpg');
+  background-size: cover;
+  height: 100vh;
+  color: white;
+  text-align: center;
+  font-weight: bold;
+}
+
+h1 {
+    color: goldenrod;
+}
+
+#message-el {
+  font-style: italic;
+}
+
+button{
+  color: #016f32;
+  background-color: goldenrod;
+  padding: 10px 30px;
+  margin-bottom: 5px;
+  border: none;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: padding .15s, color .10s;
+}
+
+button:hover{
+  padding: 12px 32px;
+  transition: padding .15s, color .10s;
+}
+
+button:active{
+  background-color: white;
+  color: goldenrod;
+  padding: 10px 30px;
+  opacity: .8;
+  transition: color .10s;
+}
