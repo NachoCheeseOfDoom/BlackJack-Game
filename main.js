@@ -33,6 +33,8 @@ function renderGame() {
 
 function newCard() {
   let newCard = 4;
-  sum = sum + newCard;
+  sum += newCard;
+  cards.push(newCard)
+  console.log(cards)
   renderGame();
 }
