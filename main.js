@@ -11,6 +11,15 @@ let hasBlackJack = false;
 let isAlive = false;
 let message = '';
 
+let player = {
+  name: "Nacho",
+  chips: 145
+}
+
+let playerEl = document.getElementById("player-el")
+playerEl.textContent = player.name + ": $" + player.chips
+
+
 console.log(cards)
 
 function getRandomCard() {
@@ -47,6 +56,8 @@ function renderGame() {
   } else if (sum === 21) {
     message = "You've got Blackjack!";
     hasBlackJack = true;
+    player.chips += 1000;
+    playerEl.textContent = player.name + ": $" + player.chips
   } else {
     message = ''
     alertsEl.style.display = 'block';
